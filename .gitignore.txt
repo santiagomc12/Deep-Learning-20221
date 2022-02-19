@@ -1,3 +1,0 @@
-#Carpetas de google
-.tmp.drivedownload
-.tmp.driveupload
