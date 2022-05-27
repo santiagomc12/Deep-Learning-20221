@@ -1,0 +1,45 @@
+<!doctype html>
+<html>
+<head>
+    <title>clasificador de sentimientos para textos en español</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/bootstrap.min.css') }}">
+</head>
+<body>
+<div class="container-fluid py-4">
+    <header class="pb-3 mb-4 border-bottom">
+        <a href="/" class="d-flex align-items-center text-dark text-decoration-none">
+            <img src="/static/img/logousta.jpg" alt="" width="30" height="24">
+            <span class="fs-4">Universidad Santo Tomas Tunja - Deep Learning 2022</span>
+        </a>
+    </header>
+    <div class="card">
+        <div class="card-header text-center">
+            <h3>Muchas gracias por su retroalimentación</h3>
+        </div>
+        <div class="card-body text-center">
+            <h4>Si desea, puede evaluar otro texto dando clic en el botón</h4>
+            <div id="buttom">
+                <form action="/">
+                    <input type="submit" class="btn btn-success" value="Evaluar otro texto">
+                </form>
+            </div>
+        </div>
+        <div class="card-footer text-center">
+            <div id="sqliteReport">
+                Ver los reportes de clasificaciones de usuarios
+                <form method="post" action="/ReportUser">
+                    <input type="submit" class="btn btn-info" value="Reporte de clasificaciones de usuario">
+                </form>
+            </div>
+        </div>
+    </div>
+</div>
+
+<div class="card-footer text-center">
+    Creado por: Santiago Eduardo Muñoz Castillo<br>
+    2022<br>
+    <a>https://github.com/santiagomc12/Deep-Learning-20221</a>
+</div>
+<script src="{{ url_for('static', filename='js/bootstrap.min.js') }}" type="text/javascript"></script>
+</body>
+</html>
